@@ -1,0 +1,13 @@
+.box {
+    width: 100%;
+    height: 100vh;
+    background-color: red; /* mettre une couleur rouge */
+    background-image: url(./src/img.png); /* ajouter une image de fond */
+    background-position: center; /* mettre l'image de fond au centre */
+    background-size: cover; /* dis de couvrir la taille du parent et donc c'est responsive pour l'image*/
+    background-size: contain; /* affiche l'image avec la taille du parent */
+    background-size: 50px; /* taille de l'image que on a mis avant de 50 px*/
+    background-repeat: no-repeat; /* pour pas que notre image se répète en mosaique. */
+    background-attachment: fixed; /* pour fixer l'image dans le fond donc que elle ne bouge pas. */
+
+}

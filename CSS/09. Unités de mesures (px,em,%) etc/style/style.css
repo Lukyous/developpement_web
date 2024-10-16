@@ -1,0 +1,8 @@
+.box {
+    width: 10px; /* px c'est les pixels */
+    width: 100%; /* % pourcentage de la taille de l'écran*/
+    width: 10vw; /* vw fait référence à la largeur du navigateur */
+    width: 10vh; /* en fonction de la largeur du navigateur */
+    width: 2rem; /* 1 rem = 16 px donc la on a 32 px*/
+    width: 2em; /* 1 em = le nombre de px du font-size parent et si il n'y a pas de font size définit chez sont parent alors 1 em ce sera 16 px */
+}
