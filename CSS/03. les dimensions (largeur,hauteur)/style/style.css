@@ -1,0 +1,20 @@
+.box {
+    background-color: red; /*juste pour afficher de la couleur et que on voit bien.*/
+    /*largeur*/
+    width: 150px; /* px = en pixel*/
+    width: 50%; /* % = en pourcentage de la largeur du navigateur. Par exemple 50, il fera 50% de la largeur de la page. Donc si j'agrandi le navigateur, la couleur aussi s'agrandit.*/
+    width: 50vh; /*vh = unité relatif à la HAUTEUR de la taille du navigateur. TOUJOURS HAUTEUR. Par exemple, 50 c'est la hauteur du navigateur divisé par 2. Ici vu que c'est width ce la couleur sera placé sur la largeur mais si c'était sur height la couleur se serait mise sur la hauteur.*/
+
+    /*hauteur*/
+    height: 150px;
+}
+
+.box1 {
+    background-color: aqua;
+    width: 100%;
+    height: 150px;
+    max-width: 200px; /*si la page grandis ou si elle devient plus petite et que width n'est pas inscrit en px, les couleurs ici vont forcément s'agrandir ou rapetissir. max-width dis que peut importe la taille du navigateur, si les couleurs s'agrandissent elles ne dépasseront jamais 200px.*/
+    min-width: 100px; /*pareil que max-width mais pour le nombre de pixe minimum.*/
+    max-height: 150px; /*pareil que max-width mais pour height*/
+    min-height: 25px; /*pareil que min-width mais pour height*/
+}
