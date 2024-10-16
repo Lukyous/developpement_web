@@ -1,0 +1,11 @@
+p {
+    width: 300px;
+    height: 80px;
+    background-color: orange;
+}
+
+.txt {
+    display: none; /*disparait la balise du site. et donc les autres items se rapproche*/
+    visibility: hidden; /*disparait la balise du site mais il laisse un espace la ou il était*/
+    opacity: 0; /* comme visibility. Il le rend transparent donc il disparait mais il laisse un espace la ou il était.*/
+}
