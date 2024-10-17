@@ -1,0 +1,24 @@
+:root {
+    font-size: 20px; /* change la taille d'écriture de base du texte (16px) à 20px */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+/* active=j'appuie sur mon élément sans relacher et ça change la couleur ici.*/
+.box:active {
+    background-color: crimson;
+}
+
+/* hover=quand je survole un élément il change la couleur ici.*/
+.box:hover {
+    background-color: green;
+}
+
+/* first-letter sélectionne la première lettre d'une phrase pour ici changer sa couleur. */
+h1:first-letter {
+    color: orange;
+}

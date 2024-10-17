@@ -1,0 +1,30 @@
+/* outline est une bordure ajouté autour de la div donc pas dans elle même. */
+/* border est une bordure ajouté dans la div directement. */
+.box {
+    width: 100%;
+    height: 100vh;
+    background-color: red; /* mettre une couleur rouge */
+    outline-style: solid; /* faire une bordune noir autour de la div. */
+    outline-style: dotted; /* faire une bordure noir en pointillé autour de la div. */
+    outline-style: #1a06cf; /* modifier la couleur de la bordure. */
+    outline-width: 2px; /* modifier la taille de la bordure donc a la grosseur de cette bordure est de 2 px. */
+
+    border: 3px solid #333; /* créé une bordure TOUT AUTOUR de la div de 3 px en gris */
+    border-left: 3px solid #333; /* créer une bordure uniquement à gauche de la div */
+    border-bottom: 3px solid #333; /* créer une bordure uniquement en bas de la div */
+    border-top: 3px solid #333; /* créer une bordure uniquement en haut de la div */
+    border-right: 3px solid #333; /* créer une bordure uniquement à droite de la div */
+
+    border: 3px dashed #333; /* créé une bordure tout autour de la div faite de tiret */
+    border: 3px inset #333; /* créé une bordure tout autour de la div un peu en 3d avec 2 couleurs */
+    border: 3px outset #333; /* comme inset mais les 2 couleurs sont inversé. */
+    border: 3px ridge #333; /* créé une bordure tout autour de la div un peu en 3d avec 2 couleurs mais différentes de inset */
+    border: 3px groove #333; /* comme ridge mais inversé */
+    border: 3px double #333; /* créé une sorte de double bordure tout autour de la div */
+    border: 3px dotted #333; /* créé une bordure tout autour de la div faite en pointillé */
+    /* outline peut aussi utiliser tous les paramètres de border. */
+    border-radius: 15px; /* arrondit tous les angles de la div de 15 px*/
+    border-radius: 15px 25px; /* arrondit les angles haut gauche et bas droit de 15px et les angles haut droit et bas gauche de 25 px*/
+    border-radius: 15px 25px 50px; /* arrondit l'angle haut gauche de 15 px, les angles haut droit et bas gauche de 25px et l'angle bas droit de 50 px.*/
+    border-radius: 15px 25px 50px 100px; /* arrondit de 15px l'angle haut gauche de la div, 25px l'angle haut droit, 50px l'angle bas droit et 100px l'angle bas gauche.*/
+}

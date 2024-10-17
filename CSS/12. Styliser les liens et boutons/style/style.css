@@ -1,0 +1,18 @@
+a {
+    color: red; /* mettre le lien en rouge */
+    text-decoration: none; /* supprimer le soulignement du lien */
+    font-size: 25px; /* modifier la taille du texte du lien à 25 px */
+}
+
+button {
+    display: inline-block; /* de base un bouton est inline la on le met aussi en block */
+    width: 150px; /* largeur de 150px */
+    height: 50px; /* hauteur de 50px */
+    border-radius: 30px; /* on arrondit les bords de 30 px */
+    border: none; /* supprimer la bordure du bouton */
+    background: midnightblue; /* changer la couleur du bouton */
+    color: azure; /* changer la couleur du texte du bouton */
+    font-weight: bold; /* mettre le texte du bouton un peu plus en gras */
+    font-size: 20px; /* changer la taille de l'écriture dans le bouton */
+    cursor: pointer; /* quand je place ma souris sur le bouton j'ai la souris qui se transforme en pointeur */
+}

@@ -1,0 +1,29 @@
+.box {
+    width: 250px;
+    height: 250px;
+}
+
+.container {
+    height: 500px;
+    background-color: salmon;
+    position: relative; /* il reste la ou il est mais il permet à ces enfants de bouger la ou ils veulent SUR lui. Si je le place pas, alors ces enfants bougeront sur body et non sur lui donc c'est plus compliqué à gérer. */
+}
+
+.box1 {
+    background-color: violet;
+    position: absolute; /* retire box1 du flux normal donc box2 prends ça place. MAIS vu que la div box1 est placé AVANT la div box2, quand box2 va prendre la place de box1 alors il sera caché par box1.*/
+    z-index: 1; /* échange la place des box. Avant box2 était par dessus box1 car les 2 était en absolute mais maintenant,  box1 est au dessus de box2 malgré que box2 soit placé après lui dans les div.*/
+}
+.box2 {
+    background-color: orange;
+    position: absolute; /* il sort aussi du flux et donc redevient devant box1. Ca permet de les positionner même sur box1 ça va pas créer de problème.*/
+    bottom: 50px; /* monte box2 de 50px */
+    left: 50px; /* déplace vers la droite box2 de 50px*/
+    right: 50px; /* déplace vers la gauche box2 de 50px */
+    top: 50px; /* descend box2 de 50px */
+}
+
+.box3 {
+    background-color: blue;
+    position: fixed; /* signifie que l'élément est fixé sur la page. Même si je scroll vers le bas, l'élément descendra avec moi il restera toujours au même endroit sur l'écran. */
+}
