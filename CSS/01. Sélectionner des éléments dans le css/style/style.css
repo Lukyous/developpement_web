@@ -1,0 +1,22 @@
+/*Il y a des priorités quand on sélectionne.*/
+/* id > class > sélection basique par exemple p*/
+/*donc si je met une couleur sur un paragraphe grâce à sa class et que après je met une couleur à ce même paragraphe grâce à son id, c'est la couleur de l'id qui sera affiché.*/
+/* si je sélectionne .box .class_box pour mettre une couleur et je fais apr_s .box p pour une autre couleur, vu que p est une sélection basique alors la couleur affiché sera celle de .box .class_box.*/
+p { /*permet de sélectionner tous les p*/
+    color: orange;
+}
+.txt { /* permet de sélectionner les éléments qui ont la class txt*/
+    color: violet;
+}
+
+div p { /*permet de sélectionner les p dans les div.*/
+    color: aqua;
+}
+
+.box .class_box { /*permet de sélectionner la class class_box contenu elle même dans l'élément qui a la class box.*/
+    color:blue;
+}
+
+.box p{
+    color: black;
+}

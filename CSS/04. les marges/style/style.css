@@ -1,0 +1,25 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+
+    margin-top: 10px; /*mettre 10px d'espace de la div vers le haut*/
+    margin-bottom: 10px; /*mettre 10px d'espace de la div vers le bas*/
+    margin-right: 10px; /*mettre 10px d'espace de la div vers la droite*/ 
+    margin-left: 10px; /*mettre 10px d'espace de la div vers la gauche*/
+
+    margin: 20px; /*met une marge de 20px sur les 4 côtés*/
+    margin: 20px 30px; /*met une marge de 20px sur le haut et bas et 30px sur le gauche et droite*/
+    margin: 20px 30px 10px; /*met une marge de 20px sur le haut, 30px sur la gauche et la droite et 10px sur le bas.*/
+    margin: 20px 30px 10px 15px; /*met une marge de 20px sur le haut, 30px sur la droite, 10px sur le bas et 15px sur la gauche. */
+
+    padding-top: 20px; /*rajouter de la marge à l'intérieur haut d'un bloc, ici la div. La div reste à la même place c'est juste le texte qui bouge.*/
+    padding-bottom: 20px; /*rajouter de la marge à l'intérieur bas d'un bloc, ici la div. La div reste à la même place c'est juste le texte qui bouge.*/
+    padding-right: 20px; /*rajouter de la marge à l'intérieur droit d'un bloc, ici la div. La div reste à la même place c'est juste le texte qui bouge.*/
+    padding-left: 20px; /*rajouter de la marge à l'intérieur gauche d'un bloc, ici la div. La div reste à la même place c'est juste le texte qui bouge.*/
+
+    padding: 20px; /*met une marge intérieur de 20px sur les 4 côtés*/
+    padding: 20px 30px; /*met une marge intérieurde 20px sur le haut et bas et 30px sur le gauche et droite*/
+    padding: 20px 30px 10px; /*met une marge intérieur de 20px sur le haut, 30px sur la gauche et la droite et 10px sur le bas.*/
+    padding: 20px 30px 10px 15px; /*met une marge intérieur de 20px sur le haut, 30px sur la droite, 10px sur le bas et 15px sur la gauche. */
+}

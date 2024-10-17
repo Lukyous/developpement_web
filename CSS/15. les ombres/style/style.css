@@ -1,0 +1,19 @@
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: orange;
+    margin-top: 1vw;
+}
+
+.box1 {
+    box-shadow: 20px 10px 5px 0px rgb(0, 0, 0, 0.5); /* 20px = pour déplacer l'ombre vers la droite. 10px = déplacer l'ombre vers le bas. 5px = le flou, plus le nombre de px est grand, plus l'ombre est flou. 0px c'est la taille de l'ombre. PLus c'est gros en px plus l'ombre est grande. enfin j'ai choisis la couleur et 0.5 pour la rendre un peu transparente au lieu de 1 qui aurait fait une ombre entièrement noir.*/
+    box-shadow: 20px 10px 5px 0px rgb(0, 0, 0, 0.5), -20px 10px 5px 0px rgb(0, 0, 0, 0.5); /* pareil que avant pour les valeurs mais une deuxième ombre est ici rajouté. Je peux en faire 5000 si j'ai envie.*/
+    box-shadow: inset 0px 0px 5px 3px rgb(0, 0, 0, 0.5); /* comme avant sauf que la l'ombre est pas a l'extérieur mais elle est à l'intérieur de la div donc ici elle se trouve sur la couleur.*/
+}
+
+/* SUR DU TEXTE */
+h1 {
+    text-align: center; /* mettre le texte au centre */
+    color: red; /* mettre le texte en rouge */
+    text-shadow: 15px 10px 5px rgba(0, 0, 0, 0.5);/* 15px=déplacer vers la droite. 10px=déplacer vers le bas. 5px=le flou. et rgba c'est pareil. */
+}

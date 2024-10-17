@@ -1,0 +1,37 @@
+p {
+    /*appliquer une couleur*/
+    color: white;
+
+    /*appliquer une couleur de fond*/
+    background-color: red;
+
+    /*ajoute de l'espace en haut et en dessous de la ligne si supérieur à 1. Sinon réduit l'espace.*/
+    line-height: 1.2;
+
+    /* style italic */
+    font-style: italic;
+
+    /* changer la taille de l'écriture */
+    font-size: 25px;
+
+    /* changer l'écriture */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* aligner du texte sur la page */
+    text-align: center; /* mettre le texte au centre de la page */
+    text-align: right;/* mettre le texte à droite de la page */
+    text-align: left;/* mettre le texte à gauche de la page */
+
+    /* décoration de texte */
+    text-decoration: underline; /* souligne le texte */
+    text-decoration: line-through; /* barre le texte */
+    text-decoration: overline; /* souligne le texte mais au dessus */
+
+    /* changer notre texte donc le mettre en majuscule, miniscule... */
+    text-transform: uppercase; /* pour tout mettre en majuscule */
+    text-transform: capitalize; /* mettre la première lettre de chaque mot en majuscule */
+    text-transform: lowercase; /* tout mettre en minuscule */
+
+    /* ajuster l'espace entre les lettres */
+    letter-spacing: 10px; /* chaque lettre est espacé de 10 px avec les autres. */
+}

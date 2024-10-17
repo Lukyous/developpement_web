@@ -1,0 +1,50 @@
+:root {
+    font-size: 20px; /* change la taille d'écriture de base du texte (16px) à 20px */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+/* active=j'appuie sur mon élément sans relacher et ça change la couleur ici.*/
+.box:active {
+    background-color: crimson;
+}
+
+/* hover=quand je survole un élément il change la couleur ici.*/
+.box:hover {
+    background-color: green;
+}
+
+/* first-letter sélectionne la première lettre d'une phrase pour ici changer sa couleur. */
+h1:first-letter {
+    color: orange;
+}
+
+/* quand je clique sur la case input elle devient violette. */
+input:focus {
+    background-color: blueviolet;
+}
+
+/* si je check la un input de type check box je peux faire un event par exemple changer sa taille. */
+input:checked {
+    width: 200px;
+    height: 200px;
+}
+
+/* si j'ai cliqué sur le lien donc que je l'ai visité */
+a:visited {
+    color:violet;
+}
+
+/* nth-child permet de sélectionner un enfant précis dans une liste */
+li:nth-child(3) { /* sélectionne le troisième orange. On peut utiliser last-child pour sélectionner le dernier enfant et first-child pour le premier. */
+    color: orange;
+}
+
+/* pour tout sélectionner sauf un précis. Ici tous les li sauf les p contenu dans le li.*/
+li:not(:has(p)) {
+    color: blue;
+}
