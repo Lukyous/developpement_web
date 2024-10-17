@@ -1,9 +1,0 @@
-.box {
-    width:50%; /* je dis que la div fait 50% de la taille de la page*/
-    max-width: 500px; /*sa taille maximum peut être de 500px*/
-}
-
-.box img {
-    width: 100%; /*la largeur de l'image a pour taille toute celle de la div dans la quel elle est*/
-    height: auto; /* la hauteur est ajusté automatiquement en fonction de la largeur de l'image*/
-}
