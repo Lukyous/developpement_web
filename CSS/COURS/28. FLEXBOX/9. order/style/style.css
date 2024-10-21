@@ -1,0 +1,27 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+} 
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}
+
+.item:nth-child(1) { /* prendre le premier item */
+  background-color: violet;
+  order: 3; /* prend la place de l'item 3. Si on l'utilise il vaut mieux mettre order sur tous les items si l'affichage est pas bon  car sinon des fois ça ne suit pas.*/
+}
+
+.item:nth-child(2) { /* prendre le premier item */
+  background-color: orange;
+  order: 2; /* vu que le 1 est devenu 3 alors le 2 est devenu 1 car il a été poussé donc la on le remet à sa place. */
+}
+
+.item:nth-child(3) { /* prendre le premier item */
+  background-color: red;
+}
+

@@ -1,0 +1,13 @@
+.box {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 2rem;
+    background-color: orange;
+    /* cacher le texte qui dépasse de la div*/
+    overflow: hidden;
+
+    /* cacher le texte mais faire apparaître une scroll bar pour pouvoir le lire quand même */
+    overflow: auto;
+
+    /* si dans une div on a une image et que on met un border radius à la div, l'image ne sera pas arrondi mais que la div car l'image est sur la div. PAR CONTRE si je met overflow: hidden, alors tout ce qui dépasse de la div est supprimé donc la l'image prendra aussi le border radius.*/
+}

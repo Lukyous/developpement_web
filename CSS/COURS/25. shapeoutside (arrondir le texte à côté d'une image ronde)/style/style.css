@@ -1,0 +1,22 @@
+body {
+    background-color: brown;
+}
+
+.box {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 55px;
+    shape-outside: circle(25%); /* sert à arrondir le texte pour aller avec l'image. */
+}

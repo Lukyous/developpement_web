@@ -1,0 +1,19 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    text-align: center; /* aligner le texte qui s'y trouve au centre */
+    color: white; /*le mettre en blanc */
+    transition-property: background; /* pour la fonction background sur la box, on peut créer des transitions. */
+    transition-duration: 1s; /* il met une seconde avant de faire une transition */
+    transition-delay: 2s; /* il attend 2 seconde avant de faire la transaction. Il faut garder la sourie dessus ici car j'utilise hover à la ligne 13.*/
+    transition-timing-function: ease; /* regarder sur internet à part ease. En gros ça signifie en haut c'est dis 1 secondes donc sur 1 seconde ce sera lent au début et rapide à la fin ou alors rapide au début et lent à la fin etc...  c'est cette fonction qui permet de choisir ça. */
+    transition: background 1s ease 2s; /* ça commence par le transition-property, puis transition-duration, puis transition-timing-function et enfin transition-delay. */
+    transition: background 1s ease 2s, color 1s ease;/* fais la première animation puis rajoute sur color le changement de couleur en rouge pendant une animation d'une durée de 1 seconde. Vu que background doit attendre 2 seconde et que color non, color se fera avant background. */
+}
+
+.box:hover { /* transition de changement de fond donc il va mettre une seconde à la faire. */
+    background-color: black;
+    color: red;
+}
+/* des fois des bugs peuvent être créé donc vaut mieux utiliser du js si on en trouve. */

@@ -1,0 +1,27 @@
+/* Appliquer un fond bleu pour les écrans dont la largeur est inférieure à 600px */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* Augmenter la taille du texte pour les écrans de 600px à 900px (comme les tablettes) */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Cacher un élément sur les grands écrans de plus de 1200px */
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Modifier l'apparence pour les écrans en orientation paysage */
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightgreen;
+  }
+}

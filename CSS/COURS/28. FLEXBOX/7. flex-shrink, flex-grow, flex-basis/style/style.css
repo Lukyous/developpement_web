@@ -1,0 +1,33 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+} 
+
+/* flex-grow gère l'espace que prend nos items */
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}
+
+.item:nth-child(1) { /* prendre le premier item */
+  background-color: violet;
+  flex-grow: 3; /* le premier item prend 3x plus de places que les autres. */
+}
+
+.item:nth-child(2) { /* prendre le premier item */
+  background-color: orange;
+  flex-grow: 2; /* le deuxième item prend 2x plus de places que les autres. */
+}
+
+.item:nth-child(3) { /* prendre le premier item */
+  background-color: red;
+  flex-grow: 1; /* le troisième prend une place normal. */
+  flex-shrink: 0; /* signifie que si la fenêtre se rétrécie, lui gardera sa taille habituelle et ne diminuera pas contrairement aux autres.*/
+  flex-shrink: 1; /* c'est la valeur par défaut ajouté à tous les items donc pas besoin de l'écrire mais permet que lui aussi s'ajuste en fonction de la taille. du navigateur. */
+  flex-basis: 250px; /* dis que l'item fera toujours 250px peut importe la taille du navigateur */
+  flex: 0 0 100px; /* flex-grow flex-shrink et enfin flex-basis*/
+}
+

@@ -1,0 +1,16 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+  align-items: center; /* aligne au centre du parents mais du côté gauche */
+  align-items: flex-start; /* aligne tout en haut du parents mais du côté gauche */
+  align-items: flex-end; /* aligne tout en bas du parents mais du côté gauche */
+  align-items: stretch; /* dans item juste en dessous j'ai donné une hauteur mais si je n'en avais pas donné(height) alors cette fonction permet de prendre toute la place disponible en hauteur. */
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}

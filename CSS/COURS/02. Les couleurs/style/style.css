@@ -1,0 +1,12 @@
+/*si je met plusieurs fois un truc en css par exemple color sur la même balise, ce sera la dernière qui prendra la couleur.*/
+p {
+    color: green;/*couleur avec le nom*/
+    color: #333;/*couleur hexadécimal*/
+    color: rgba(0,0,0);/*couleur rgb*/
+    color: rgba(0,0,0,0.5); /*le 0.5 sert pour ajouter de la transparence. 0.1 on le voit casi plus et 1 on le voit très bien.*/
+    color: hsl(181, 35%, 63%); /*color hwb*/
+    color: hwb(181 4% 13%); /*color hwb*/
+
+    background-color: blue;/*background-color est pour mettre le fond en couleur. Ici le font du paragraphe en bleu.*/
+    /*pour mettre les couleurs je peux aussi utiliser le nom de la couleur, hexadécimal, rgb, hsl et hwb.*/
+}

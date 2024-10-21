@@ -1,0 +1,37 @@
+.cont {
+  height: 400px;
+  background-color: salmon;
+  display: grid; /* pouvoir gérer une grille pour positionner */
+  grid-template-rows: 150px 150px; /* me permet de créer 2 rangées de 150 px */
+  grid-template-columns: 250px 250px 250px; /* j'ai créé 3 colonnes. */
+
+  grid-row-gap: 10px; /* créé un espace de 10px entre chaque ligne */
+  grid-column-gap: 50px ; /* créé un espace de 50px entre chaque colonne */
+  grid-gap: 10px 20px; /* commence par grid-row-gap et 50 pour grid-column-gap*/
+}
+
+.box1 {
+  background-color: red;
+  grid-row: 2/3; /* place sur la deuxième ligne à la première place */
+  grid-column: 3/4;/* place sur la troisième colonne à la troisième place */
+}
+
+.box2 {
+  background-color: blue;
+}
+
+.box3 {
+  background-color: violet;
+}
+
+.box4 {
+  background-color: brown;
+}
+
+.box5 {
+  background-color: orange;
+}
+
+.box6 {
+  background-color:  pink;
+}

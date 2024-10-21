@@ -1,0 +1,10 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to top, red, blue); /* va de bas en haut, et dégradé de rouge en bleu, je peux rajouter autant de couleur que souhaité.*/
+    background: linear-gradient(70deg, red, blue); /* change le sens de mon dégradé à 70deg */
+    background: linear-gradient(70deg, red 20%, blue); /* change la taille de couleur utilisé */
+    background: linear-gradient(70deg, transparent, red); /* une partie transparente donc si on a une image en dessous on la voit. */
+}
+
+/* il existe plus de type de dégradé que ça mais ils ne m'intéressent pas.*/

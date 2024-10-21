@@ -1,0 +1,14 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+  /* flex flow est une propriété raccourci de flex wrap et de flex direction.*/
+  flex-flow: wrap row; /* met en colonne et permet de wrap pour rendre responsive.(il y en a d'autre.) */
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}

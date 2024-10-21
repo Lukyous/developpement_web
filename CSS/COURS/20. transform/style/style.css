@@ -1,0 +1,19 @@
+.cont {
+    width: 400px;
+    height: 200px;
+    perspective: 500px; /* active les modules 3d sur une perspective de profondeur de 500px. (fonctionne avec tous les modules comprenant dans le nom 3D ou Z. */
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: salmon;
+    transform: translate(20px, 30px); /* déplace l'élément à 20px sur x et 30px sur y. si je met 50% pour les 2 ça centre tout au milieu. comparé au parent */
+    transform: rotate(30deg); /* tourner l'élément de 30 degrés */
+    transform: skew(25deg, 30deg); /* déforme sur X de 25 deg et sur Y de 30 deg */
+    transform: scale(2); /* rend l'objet 2x plus grand*/
+    transform: translateX(50px) rotate(30deg) scale(1.2); /* on peut enchainer les transforme comme ça */
+    transform: translateZ(-15px); /* 3D pousse en arrière donc réduit la taille*/
+    transform: translate3d(0,0,-100px); /* valeur sur x puis y puis Z*/
+    transform: rotate3D(5, 9, 0, 150deg); /* x puis y puis z puis angle de rotation */
+}

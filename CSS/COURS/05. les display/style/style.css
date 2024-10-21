@@ -1,0 +1,27 @@
+span { /*élément de base inline*/
+    display: inline-block; /*il reste inline mais il aura un comportement block donc je peux utiliser width, height, background-color etc...*/
+    display: block; /*il devient block donc je peux utiliser width, height, background-color etc...*/
+}
+
+h1 {
+    background-color: violet;
+    display: inline;/*h1 est de base un block qui devient ici inline donc la couleur prend plus toute la page mais uniquement le titre.*/
+}
+
+.box {
+    width: 300px;
+    height: 80px;
+    background-color: yellow;
+    display: flex; /*Ca permet de le mettre en flex et de tout mettre en ligne et tout accoller. J'ai fais un cours entier dessus.*/
+    display: grid; /*Ca permet de faire des grilles. J'ai fais un cours entier dessus.*/
+    display: table; /*il a un comportement de table*/
+    display: none; /*la div qui contient la class box avec display none disparait.*/
+}
+
+.box2 {
+    background-color: coral;
+    display: inline-block;/*mélange entre inline et block*/
+    display: inline-flex;/*mélange entre inline et flex*/
+    display: inline-grid;/*mélange entre inline et grid*/
+    display: inline-table;/*mélange entre inline et table*/
+}

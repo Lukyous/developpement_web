@@ -1,0 +1,17 @@
+.box {
+    width: 400px;
+    height: 400px;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    filter: blur(5px); /* rendre l'image flou */
+    filter: contrast(200%); /* augmenter le contraste */
+    filter: grayscale(100%); /* mettre l'image en noir et blanc. Si on baisse les pourcentages elle est de moins en moins en noir et blanc*/
+    filter: hue-rotate(90deg); /* inverse la couleur genre le bleu devient rouge etc... */
+    filter: opacity(25%); /* le rendre un peu transparent */
+    filter: saturate(25%); /* augmenter la saturation */
+    filter: brightness(0.4); /* baisser la luminosité */
+    filter: blur(5px) contrast(2) opacity(5); /* mettre plusieurs filtres en même temps. Faire attention aux unités des fois faut en mettre des fois non ça bug*/
+}

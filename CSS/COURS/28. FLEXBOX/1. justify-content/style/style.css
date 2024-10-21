@@ -1,0 +1,22 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+  justify-content: center; /* centre les items au centre */
+  justify-content: flex-end; /* centre les items à la fin */
+  justify-content: flex-start; /* centre les items au début */
+  justify-content: end; /* centre les items à la fin */
+  justify-content: start; /* centre les items au début */
+  justify-content: right;/* centre les items à droite*/
+  justify-content: left;/* centre les items à gauche*/
+  justify-content: space-around; /* créé un espace entre tous les items qui change en fonction de la taille du navigateur. L'espace est différent entre les items et les items avec le bord de la fenêtre.*/
+  justify-content: space-between; /* comme avant mais colles au bord et à la fin et après centre les autres. Ils changent en fonction de la taille du navigateur.*/
+  justify-content: space-evenly; /* met le même espace entre tous les items que ce soit au bord ou entre eux. Ils changent en fonction de la taille du navigateur.*/
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}

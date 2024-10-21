@@ -1,0 +1,11 @@
+/* la fonction calc permet de faire des calculs pour déterminer la valeur d'une propriété en CSS. */
+p {
+    font-size: calc(25px + 2vw - 2px); /* adapte la taille de l'écriture avec la taille de l'écran. */
+}
+
+.box1 {
+    margin-top: 1rem;
+    width: clamp(10px, 4em, 80px); /* pas compris */
+    background-color: blue;
+    height: 200px;
+}

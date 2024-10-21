@@ -1,0 +1,17 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+  flex-direction: column; /* range les items par colonne */
+  flex-direction: column-reverse; /* range les items par colonne mais en ordre inversé */
+  flex-direction: row; /* range les items en ligne */
+  flex-direction: row-reverse; /* range les items en ligne mais en ordre inversé */
+  /* si je met flex direction en column ou column-reverse, alors justify-content et align-items seront inversé. */
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}

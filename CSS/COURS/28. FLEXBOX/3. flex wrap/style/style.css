@@ -1,0 +1,15 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+  justify-content: center; /* aligner les items au centre */
+  flex-wrap: wrap; /* rend les items responsive. Si j'agrandit ou rapetissi la page alors ils se déplacent automatiquement*/
+  flex-wrap: nowrap; /* comme avant mais ne se déplace pas, juste ils changent automatiquement leurs largeur. */
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}

@@ -1,0 +1,40 @@
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    text-align: center; 
+    color: white; 
+    transition: background 1s ease 2s, color 1s ease;
+    
+    /* donner un nom à l'animation */
+    animation-name: tourne;
+    /* vitesse de l'animation donc plus rapide au début qu'a la fin etc etc...*/
+    animation-timing-function: ease;
+    /* délai d'attente */
+    animation-delay: 5s;
+    /* durée de l'animation */
+    animation-duration: 2s;
+    /* définie le style qui est appliqué à la fin, au début ou pendant une animation (forwards, backwars, both)*/
+    animation-fill-mode: forwards;
+    /* l'animation se répète à l'infini */
+    animation-iteration-count: infinite;
+    /* l'animation se fait à l'envers donc elle part de 100% vers 0% */
+    animation-direction: reverse;
+    /* comme avant sauf que c'est à l'endroit puis à l'envers puis à l'endroit etc.. */
+    animation-direction: alternate ;
+    /* comme avant sauf que elle commence par l'animation à l'envers */
+    animation-direction: alternate-reverse;
+    /* tout mettre en une seule fonction */
+    animation: tourne 2s ease 1s infinite alternate; /* on lui donne un nom puis une durée puis animation-timing-function puis le délai avant le commencement puis le nombre d'itération puis la direction et animation-fill-mode*/
+}
+
+/* on a juste déclarer l'animation mais pour la créer: */
+@keyframes tourne { /* le nom de notre animation donné au début */
+    0% {
+        transform: rotate(0deg); /* a 0% donc au début elle a pas tourné et la commence l'animation de rotation */
+    }
+    100% {
+        background-color: crimson;
+        transform: rotate(180deg); /* quand ça termine elle doit avoir tourné de 180deg. */
+    }
+} /* animation-fill-mode forwards dis que à la fin il reste comme l'animation est faite. backwars signifie que à la fin de l'animation il reprend sa couleur et sa place normal. */

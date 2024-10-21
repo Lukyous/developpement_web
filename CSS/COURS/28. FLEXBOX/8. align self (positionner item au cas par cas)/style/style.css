@@ -1,0 +1,29 @@
+.cont {
+  height: 500px;
+  background-color: salmon;
+  display: flex; /* rends les items dans se trouvant dans cont flexible */
+} 
+
+.item {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 1rem;
+}
+
+.item:nth-child(1) { /* prendre le premier item */
+  background-color: violet;
+  align-self: flex-end; /* met l'item tout en bas */
+}
+
+.item:nth-child(2) { /* prendre le premier item */
+  background-color: orange;
+  align-self: flex-start; /* l'item va tout en haut */
+}
+
+.item:nth-child(3) { /* prendre le premier item */
+  background-color: red;
+  align-self: center; /* il va au centre de son espace */
+  align-items: stretch; /* pour que il prenne toute la place mais la l'item a une hauteur prédéfinis que on a mis dans .item mais si elle n'y était pas il prendrai toute la place.*/
+}
+

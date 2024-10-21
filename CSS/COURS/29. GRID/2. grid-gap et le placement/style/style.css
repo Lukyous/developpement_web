@@ -1,0 +1,31 @@
+.cont {
+  height: 400px;
+  background-color: salmon;
+  display: grid; /* pouvoir gérer une grille pour positionner */
+  grid-template-rows: 150px 150px; /* me permet de créer 2 rangées de 150 px */
+  grid-template-columns: 250px 250px 250px; /* j'ai créé 3 colonnes. */
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: blue;
+}
+
+.box3 {
+  background-color: violet;
+}
+
+.box4 {
+  background-color: brown;
+}
+
+.box5 {
+  background-color: orange;
+}
+
+.box6 {
+  background-color:  pink;
+}

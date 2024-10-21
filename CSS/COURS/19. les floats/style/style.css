@@ -1,0 +1,24 @@
+.cont {
+    width: 100%;
+    height: 300px;
+    background-color: salmon;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+}
+
+.box1 {
+    background-color: green;
+    float: left; /* sort du flux et le fait flotter à gauche et donc sur la box2 je peux faire un margin juste après si je veux. */
+}
+
+.box2 {
+    background-color: red;
+    float: right; /* sort du flux et colle la box à droite je peux faire un margin juste après si je veux.  */
+}
+
+p {
+    clear: right; /* permet d'aller en bas des box donc en dessous. Il est right car il doit prendre la valeur de la box qui le précède qui est right.*/
+}
