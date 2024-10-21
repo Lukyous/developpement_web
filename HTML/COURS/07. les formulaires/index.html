@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--pour les formulaires on utilise la balise form.-->
+        <!--la balise forme a 2 attribut. action qui est généralementune liaison et méthode qui est la méthode d'envoi.-->
+        <form action="" method="">
+
+        </form>
+        <!--on va commencer par mettre un label car c'est ce qui va avec un formulaire pour donner des noms. Il a l'attribut for pour lui donner un nom.-->
+        <!--on rajoute le input qui contient l'attribut id et type. Il sert à pouvoir écrire du texte. l'id du input doit être la même chose que le for du label pour pouvoir les connecter.-->
+        <!--le input a aussi l'attribut placeholder pour écrire dans le input mais en gris par exemple: Indiquez votre nom-->
+        <!--pour les input, on rajoute dedans name="" en attribut. C'est bien pour le backend et autre pour se repérer. même pour les personnes mal voyante ça permet de le lire correctement.-->
+        <form action="" method="">
+            <label for="nom">Nom</label>
+            <input id="nom" type="text" input="Indiquez votre nom" name="nom de famille">
+            <br>
+            <label for="prenom">Prénom</label>
+            <input id="prenom" type="text" input="Indiquez votre prénom" name="ton prenom">
+            <br>
+            <label for="mail">Mail</label>
+            <input id="mail" type="email" placeholder="Indiquez votre mail" name="ton mail"> <!--le type ici est email car on attend email. Il y a plusieurs types en fonction de ce que on veut.-->
+            <br>
+            <label for="message">Message</label>
+            <textarea name="ton texte" id="message" cold="30" rows="10"></textarea> <!--textarea est comme input sauf que c'est une grande case pour écrire et on peut choisir sa taille minimum avec cold et rows. Contrairement à input qui est assez petit. textarea est pour les messages surtout.-->
+            <br>
+            <button type="submit">Envoyer le message</button>
+        </form>
+        <!--IMPORTANT, POUR UN FORMULAIRE TOUT EST ENTRE LA BALISE FORM. LE BOUTON AJOUTÉ TOUT EN BAS DE LA BALISE FORM SAIT DONC QUE IL DOIT ENVOYER TOUTES LES DONNES INDIQUE DANS CETTE BALISE.-->
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table>
+            <!--table = balise parente-->
+            <thead>
+                <!--thead = header du tableau-->
+                <tr>
+                    <!-- tr = créer des rangés(lignes) -->
+                     <th>Titre</th> <!--th = créer des titres-->
+                     <th>Titre</th> 
+                     <th>Titre</th> 
+                     <th>Titre</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <!--tbody = corp du tableau-->
+                <tr>
+                    <!--tr = créer des rangés(lignes)-->
+                    <td>contenu</td> <!--td = créer des contenu-->
+                    <td colspan="5">contenu</td> <!--colspan="5" signifie qu'il prend 5 colonnes du tableau (il s'étend sur 5 colonnes) (on a fait 4 titre donc il y en a que 4 des colonnes car chaque titre est une colonne mais si on en avait fait plus il s'étendrait sur 5 colonnes. La il peux maximum 3 du coup donc c'est 3 colonnes.)--> 
+                    <td rowspan="3">contenu</td>  <!--rowspan="3" signifie qu'il prend 3 rangés du tableau (il s'étend sur 3 rangés)--> 
+                    <td>contenu</td> 
+                </tr>
+                <tr>
+                    <td>contenu</td> 
+                    <td>contenu</td>
+                    <td>contenu</td>
+                    <td>contenu</td> 
+                </tr>
+                <tr>
+                    <td>contenu</td>
+                    <td>contenu</td> 
+                    <td>contenu</td> 
+                    <td>contenu</td> 
+                </tr>
+            </tbody>
+            <tfoot>
+                <!--tfoot = footer du tableau-->
+                <tr>
+                    <td>footer</td>
+                    <td>footer</td>
+                    <td>footer</td>
+                    <td>footer</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

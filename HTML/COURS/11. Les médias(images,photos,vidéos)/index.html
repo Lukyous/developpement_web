@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!--audios (les navigateurs désactive l'activation du son par défaut au lancement de la page mais on peut cliquer sur les boutons pour l'activer.)-->
+        <!--controls sert à faire apparaître les boutons pour la musique-->
+        <!--loop sert à faire tourner la musique en boucle. donc si on appuie sur le bouton lancement de la musique et que la musique se termine elle recommencera.-->
+        <!--autoplay qui lance automatiquement mais ce n'est plus pris en compte du coup-->
+        <!--si je rajoute l'attribut muted alors le son sera muté par défaut-->
+        <audio controls loop muted src="../audio/lomepal.mp3"></audio>
+
+        <!--vidéos-->
+        <!--les mêmes attributs que audio sauf que il y a pas autoplay et ici il y a poster permettant de mettre une image au tout début de la vidéo (une miniature)-->
+        <video controls loop muted poster="../images/image-1200x400.jpg" src="../videos/video.mp4"></video>
+    
+        <!--images-->
+        <!--alt est ce qui est lu par un navigateur pour un mal voyant donc vraiment important de bien le renseigner et explicitement.-->
+        <img src="../images/image-400x400.jpg" alt="image contenant une horloge">
+        <figcaption>test</figcaption><!--écrit une description sous l'image directement-->
+
+        <!--met une image par défaut donc image-400x400. Si l'écran a minimu 640px alors il met l'image 800x400 et si il a minimum 992px il met 1200x400-->
+        <figure>
+            <picture>
+                <source media="(min-width: 992px)" srcset="../images/image-1200x400.jpg" type="image/jpg">
+                <source media="(min-width: 640px)" srcset="../images/image-800x400.jpg" type="image/jpg">
+                <img src="../images/image-400x400.jpg" alt="image contenant une horloge">
+                <figcaption>Ttest</figcaption>
+            </picture>
+        </figure>
+        
+    </body>
+</html>
