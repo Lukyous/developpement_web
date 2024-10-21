@@ -1,1 +1,0 @@
-alert("salut voici une alerte")
